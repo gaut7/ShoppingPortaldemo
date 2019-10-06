@@ -1,0 +1,15 @@
+<div>
+		<nav class="{{active}}" ng-click="$event.preventDefault()" style="width: 100%;">
+            <!-- When a link in the menu is clicked, we set the active variable -->
+            <h2>Shopping Site</h2> 
+            <a href="#" class="home" ng-click="active='home'">
+             <ng-md-icon icon="home" style="fill:white"></ng-md-icon>
+            </a>
+            <a ng-href="favourit" class="electronics" ng-click="active='electronics'">
+              Electronics</a>
+            <a href="#" class="appliances" ng-click="active='appliances'">
+              Appliances</a>
+            <a href="#" class="clothing" ng-click="active='clothing'">
+              Clothing</a>
+        </nav>
+</div>

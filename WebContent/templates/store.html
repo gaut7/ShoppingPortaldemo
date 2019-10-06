@@ -1,0 +1,16 @@
+<div style="height: 80%;" ng-if="storeList.length>0">
+<div ng-repeat="store in storeList" style="display: inline-block;padding: 10px;">
+	<div ng-click="getStoreProductList(store)">
+	  <img src="{{store.image}}" alt="image not available" style="height: 200px;width: 200px;">
+	  <div style="color: black;">{{store.name}}</div>
+	</div>
+</div>
+</div>
+
+<div ng-if="storeList.length<1" style="height: 80%;">
+  No Store Available
+</div>
+
+<div>
+   <button style="width: 100%;" ng-click="goToHome()"> Back to Home</button>
+</div>

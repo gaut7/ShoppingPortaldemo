@@ -1,0 +1,14 @@
+<div ng-repeat="product in productList" style="display: inline-block;padding: 10px;">
+	<div class="card">
+	  <img src={{product.image}} alt="product image" style="height: 80px;width: 160px;" >
+	  <div>{{product.name}}</div>
+	  <span style="font: 10px;">
+	      <span><i class="fa fa-inr" style="font-size: 12px;"></i>{{product.price-(product.price*product.discount)/100}}</span> 
+		  <span style="color:gray;"><strike>{{product.price}}</strike></span> 
+		  <span style="color: green;">&nbsp; {{product.discount}}<i class="fa fa-percent" style="font-size: 12px;" aria-hidden="true"></i> off </span> 
+	  </span>
+	  <div><button ng-click="addProductToFavouritList(product)" >Add to Cart</button></div>
+	</div>
+</div>
+
+

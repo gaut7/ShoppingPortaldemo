@@ -1,0 +1,141 @@
+/* Styles go here */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 15px/1.3 'Open Sans', sans-serif;
+	color: #5e5b64;
+	text-align: center;
+}
+
+a, a:visited {
+	outline: none;
+	color: #389dc1;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	display: inline-block;
+}
+
+section, footer, header, aside, nav {
+	display: block;
+}
+/*-------------------------
+The menu
+--------------------------*/
+nav {
+	display: inline-block;
+	background-color: #5597b4;
+	box-shadow: 0 1px 1px #ccc;
+	border-radius: 2px;
+}
+
+nav h2 {
+	color: #fff !important;
+}
+
+nav a {
+	display: inline-block;
+	padding: 18px 30px;
+	color: #fff !important;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none !important;
+	line-height: 1;
+	text-transform: uppercase;
+	background-color: transparent;
+	-webkit-transition: background-color 0.25s;
+	-moz-transition: background-color 0.25s;
+	transition: background-color 0.25s;
+}
+
+nav a:first-child {
+	border-radius: 2px 0 0 2px;
+}
+
+nav a:last-child {
+	border-radius: 0 2px 2px 0;
+}
+
+nav.home .home, nav.electronics .electronics, nav.appliances .appliances,
+	nav.clothing .clothing {
+	color: yellow !important;
+}
+
+p {
+	font-size: 22px;
+	font-weight: bold;
+	color: #7d9098;
+}
+
+p b {
+	color: #ffffff;
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #c4d7e0;
+	border-radius: 2px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.modal-content {
+	background-color: darkcyan;
+}
+
+.btn-link {
+	color: white;
+}
+
+.modal-heading h2 {
+	color: #ffffff;
+}
+
+@media screen and (min-width: 768px) .modal-dialog {
+     left : 0%;
+	}
+	
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 15px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  color: #0a0a0a;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* store css */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}	
+

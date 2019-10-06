@@ -1,0 +1,60 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height" />
+  <title>Assignment</title>
+  
+  <link rel="stylesheet" href="assets/bootstrap.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/jquery-ui.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/toastr.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+  <script type="text/javascript" src="js/vendor/jquery.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery-ui.js"></script>
+  <script src="js/vendor/angular.min.js"></script>
+  <script type="text/javascript" src="js/vendor/angular-ui-router.js"></script>
+  <script type="text/javascript" src="js/vendor/angular-route.js"></script>
+  <script type="text/javascript" src="js/vendor/toastr.min.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript" src="js/vendor/ngStorage.js"></script>
+  <script type="text/javascript" src="js/vendor/angular-local-storage.js"></script>
+  <script type="text/javascript" src="js/vendor/ui-bootstrap-tpls-2.2.0.min.js"></script>
+  
+  <script src="js/service/services.js"></script>
+  <script src="js/constants/constant.js"></script>
+  <script type="text/javascript" src="js/controller/mainController.js"></script>
+    
+</head>
+
+<body ng-app="myApp" ng-controller="MainCtrl">
+	<div>
+		<nav class="{{active}}" style="width: 100%;">
+            <!-- When a link in the menu is clicked, we set the active variable -->
+            <h2>Shopping Site</h2> 
+            <a href="#/home" class="electronics" ng-click="active='home'">
+              home</a>
+            <a href="#/store" class="appliances" ng-click="active='stores'">
+              stores</a>
+            
+            <a href="#/signup" ng-if="!authenticated" class="signUp" style="float: right;">
+              signUp</a>  
+              
+            <a href="#/login" ng-if="!authenticated" class="signIn" style="float: right;">
+              signIn</a>
+            
+            <a href="#" ng-if="authenticated" class="signOut" ng-click="signout()" style="float: right;">
+              signOut</a>
+            
+            <a href="#/favourit" ng-if="authenticated" class="favourit" style="float: right;">
+              favourit</a>        
+        </nav>
+	</div>
+	 <div ng-view></div>
+	 
+</body>
+</html>
